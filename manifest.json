@@ -1,0 +1,20 @@
+{
+    "manifest_version" : 2,
+    "name" : "Focus",
+    "version" : "1.0",
+    "description" : "Keep you focus on what really matters, your work.",
+    "content_scripts" : [
+        {
+            "matches" : ["https://www.youtube.com/*"],
+            "js" : ["./main.js"]
+        },
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["jquery.min.js", "./main.js"]
+        }
+    ],
+    "icons": {
+        "16": "images/focus_icon.png",
+        "32": "images/focus_icon.png"
+    }
+}
